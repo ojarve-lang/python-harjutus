@@ -1,18 +1,12 @@
 """
-Kujundite joonistamise programm
-
-Programm joonistab ekraanile juhuslikke kujundeid:
-- ruudu
-- ringi
-- viisnurga
-- suvalise kujundi
-
+Kujundite joonistamise programm.
+Programm joonistab ekraanile juhuslikke kujundeid.
+ruudu, ringi,viisnurga,kujundi. 
 Valikus mitu kujundit joonistada ja millist tüüpi.
 Kujundid ilmuvad juhuslikku kohta ja on juhuslikult värvitud.
-
-Märkus:kasutasin programmi tegemisel abi.
-Sõbranna juhendas, kuidas teha suvalisi koordinaate, valida värve
-ja joonistada täidetud kujundeid.
+Kasutasin programmi tegemisel abi.
+Sõbranna juhendas, kuidas teha suvalisi koordinaate.
+Värviga joonistada kujundeid.
 """
 
 import turtle
@@ -25,11 +19,9 @@ aken.title("Kujundite joonistamine")
 kilp = turtle.Turtle()
 kilp.speed(0)
 
-
 def joonista_kujund(tyyp, suurus):
     """
     Joonistab ühe kujundi ekraanile.
-
     Argumendid:
     tyyp (str): "ruut", "ring", "viisnurk" või "suvaline"
     suurus (int): kujundi külje pikkus või ringi raadius
@@ -62,7 +54,6 @@ def joonista_kujund(tyyp, suurus):
         joonista_kujund(random.choice(["ruut", "ring", "viisnurk"]), suurus)
 
     kilp.end_fill()
-
 
 while True:
     tyyp = input(
